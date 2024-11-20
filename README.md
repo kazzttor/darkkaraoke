@@ -1,18 +1,14 @@
-Segue o texto sugerido para o arquivo `README.md` que explica o projeto:
+# DarkKaraoke ðŸŽ¤ðŸŽ¶
 
----
-
-# DarkKaraoke ????
-
-**DarkKaraoke** é uma ferramenta que cria vídeos de karaokê (playback sem vocais) a partir de músicas locais em formato MP3 ou diretamente do YouTube. O programa realiza separação de instrumentos, alteração de tonalidade, extração automática de legendas sincronizadas com os vocais e geração de vídeos com imagens de fundo de uso livre.
+**DarkKaraoke** Ã© uma ferramenta que cria vÃ­deos de karaokÃª (playback sem vocais) a partir de mÃºsicas locais em formato MP3 ou diretamente do YouTube. O programa realiza separaÃ§Ã£o de instrumentos, alteraÃ§Ã£o de tonalidade, extraÃ§Ã£o automÃ¡tica de legendas sincronizadas com os vocais e geraÃ§Ã£o de vÃ­deos com imagens de fundo de uso livre.
 
 ## Funcionalidades
-- ?? **Separação de Instrumentos**: Remove vocais utilizando algoritmos como Demucs ou Spleeter.
-- ?? **Alteração de Tonalidade**: Ajusta o tom dos instrumentos, mantendo a bateria inalterada.
-- ?? **Geração de Legendas**: Extrai legendas sincronizadas com os vocais utilizando Whisper ou Lyrics.ovh.
-- ?? **Criação de Vídeos**: Gera vídeos de karaokê em múltiplas resoluções com imagens de fundo baixadas automaticamente.
-- ?? **Suporte a YouTube**: Baixa músicas diretamente do YouTube em formato MP3.
-- ??? **Imagens de Fundo Livres**: Utiliza a API do Unsplash para adicionar visuais atrativos e licenciados aos vídeos.
+- ?? **SeparaÃ§Ã£o de Instrumentos**: Remove vocais utilizando algoritmos como Demucs ou Spleeter.
+- ?? **AlteraÃ§Ã£o de Tonalidade**: Ajusta o tom dos instrumentos, mantendo a bateria inalterada.
+- ?? **GeraÃ§Ã£o de Legendas**: Extrai legendas sincronizadas com os vocais utilizando Whisper ou Lyrics.ovh.
+- ?? **CriaÃ§Ã£o de VÃ­deos**: Gera vÃ­deos de karaokÃª em mÃºltiplas resoluÃ§Ãµes com imagens de fundo baixadas automaticamente.
+- ?? **Suporte a YouTube**: Baixa mÃºsicas diretamente do YouTube em formato MP3.
+- ??? **Imagens de Fundo Livres**: Utiliza a API do Unsplash para adicionar visuais atrativos e licenciados aos vÃ­deos.
 
 ## Requisitos
 Certifique-se de ter as seguintes bibliotecas instaladas no seu ambiente Python:
@@ -33,14 +29,14 @@ demucs
 spleeter
 ```
 
-## Instalação
-1. Clone o repositório:
+## InstalaÃ§Ã£o
+1. Clone o repositÃ³rio:
    ```bash
    git clone https://github.com/kazzttor/darkkaraoke.git
    cd darkkaraoke
    ```
 
-2. Instale as dependências:
+2. Instale as dependÃªncias:
    ```bash
    pip install -r requirements.txt
    ```
@@ -50,21 +46,21 @@ spleeter
    - Insira suas chaves de API do OpenAI e do Unsplash.
 
 ## Uso
-### 1. Geração Completa
-Gere o karaokê diretamente de uma URL ou arquivo local:
+### 1. GeraÃ§Ã£o Completa
+Gere o karaokÃª diretamente de uma URL ou arquivo local:
 ```bash
-python src/darkkaraoke.py --entrada "<URL ou caminho para o arquivo>" --artista "Nome do Artista" --song "Título da Música" --key_shift <número de semitons> --legenda whisper
+python src/darkkaraoke.py --entrada "<URL ou caminho para o arquivo>" --artista "Nome do Artista" --song "TÃ­tulo da MÃºsica" --key_shift <nÃºmero de semitons> --legenda whisper
 ```
 
-### 2. Personalização
+### 2. PersonalizaÃ§Ã£o
 - Para incluir legendas externas:
   ```bash
-  python src/darkkaraoke.py --gerarvideo --entrada "<caminho>" --arqlegenda "<arquivo.srt>" --artista "Nome do Artista" --song "Título da Música" --key_shift <número de semitons>
+  python src/darkkaraoke.py --gerarvideo --entrada "<caminho>" --arqlegenda "<arquivo.srt>" --artista "Nome do Artista" --song "TÃ­tulo da MÃºsica" --key_shift <nÃºmero de semitons>
   ```
 
 - Para ajustar legendas:
   ```bash
-  python src/darkkaraoke.py --ajustarlegenda --arqlegenda "<arquivo.srt>" --artista "Nome do Artista" --song "Título da Música"
+  python src/darkkaraoke.py --ajustarlegenda --arqlegenda "<arquivo.srt>" --artista "Nome do Artista" --song "TÃ­tulo da MÃºsica"
   ```
 
 ### 3. Imagens de Fundo
@@ -73,20 +69,20 @@ Baixe imagens de fundo:
 python src/darkkaraoke.py --gerarbackground 10
 ```
 
-### Resoluções Disponíveis
-Os vídeos gerados suportam as seguintes resoluções:
-- **Full HD (1920x1080)** (padrão)
+### ResoluÃ§Ãµes DisponÃ­veis
+Os vÃ­deos gerados suportam as seguintes resoluÃ§Ãµes:
+- **Full HD (1920x1080)** (padrÃ£o)
 - **4K (3840x2160)**
 - **480p (854x480)**
 - **Vertical (1080x1920)**
 - **Old TV (640x480)**
 
-## Contribuição
-Contribuições são bem-vindas! Se encontrar problemas ou tiver ideias para melhorar, abra uma issue ou envie um pull request.
+## ContribuiÃ§Ã£o
+ContribuiÃ§Ãµes sÃ£o bem-vindas! Se encontrar problemas ou tiver ideias para melhorar, abra uma issue ou envie um pull request.
 
-## Licença
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+## LicenÃ§a
+Este projeto estÃ¡ licenciado sob a [LicenÃ§a MIT](LICENSE).
 
 ---
 
-Se precisar de mais ajustes ou adições, é só avisar!
+Se precisar de mais ajustes ou adiÃ§Ãµes, Ã© sÃ³ avisar!
