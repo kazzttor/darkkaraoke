@@ -1,0 +1,13 @@
+yt-dlp
+librosa
+soundfile
+pydub
+moviepy
+numpy
+Pillow
+pysrt
+requests
+openai
+openai-whisper
+demucs
+spleeter

@@ -1,0 +1,6 @@
+src/config/credentials.json
+src/audio/
+src/video/
+__pycache__/
+*.pyc
+*.log
