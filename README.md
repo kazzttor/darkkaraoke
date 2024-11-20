@@ -42,7 +42,7 @@ spleeter
    ```
 
 3. Configure as credenciais:
-   - Renomeie o arquivo `config/openai_credentials_example.json` para `openai_credentials.json`.
+   - Renomeie o arquivo `config/credentials_example.json` para `config/credentials.json`.
    - Insira suas chaves de API do OpenAI e do Unsplash.
 
 ## Uso
